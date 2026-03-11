@@ -4,6 +4,7 @@ import { format, formatDistanceToNow } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
 import styles from './Post.module.css'
+import Avatar from "./Avatar";
 
 export default function Post(){
 
@@ -22,11 +23,7 @@ export default function Post(){
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img 
-                    className={styles.avatar}
-                    src="https://avatars.githubusercontent.com/u/130321292?v=4" 
-                    alt="Avatar" 
-                    />
+                    <Avatar src="https://github.com/thaiur.png" hasBorder/>
                     <div className={styles.authorInfo}>
                         <strong>Victor</strong>
                         <span>Aspirante de Gamedev</span>
