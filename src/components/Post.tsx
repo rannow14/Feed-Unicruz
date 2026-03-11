@@ -1,6 +1,9 @@
+import Comment from "./Comment";
+
 import { format, formatDistanceToNow } from "date-fns";
-import styles from './Post.module.css'
 import { ptBR } from "date-fns/locale";
+
+import styles from './Post.module.css'
 
 export default function Post(){
 
@@ -55,6 +58,12 @@ export default function Post(){
                 </footer>
                 
             </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
         </article>
     )
 }
